@@ -1,12 +1,12 @@
 {
   "name": "aspie-even-numbers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Set any number to what an aspie considers even. (includes multiples of 5)",
   "license": "MIT",
   "author": "AspieSoft",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aspiesoft/packageName.git"
+    "url": "git://github.com/aspiesoft/aspie-even-numbers.git"
   },
   "main": "index.js",
   "keywords": [
