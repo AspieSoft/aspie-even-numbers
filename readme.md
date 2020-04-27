@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/aspie-even-numbers)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/aspie-even-numbers)
 ![GitHub top language](https://img.shields.io/github/languages/top/aspiesoft/aspie-even-numbers)
-![NPM](https://img.shields.io/npm/l/packageName)
+![NPM](https://img.shields.io/npm/l/aspie-even-numbers)
 
 ![npm](https://img.shields.io/npm/dw/aspie-even-numbers)
 ![npm](https://img.shields.io/npm/dm/aspie-even-numbers)
