@@ -1,6 +1,6 @@
 // In God We Trust
 
-const aspieEven = require('./src/index.min');
+const aspieEven = require('./main.min');
 
 module.exports = {
 	check: aspieEven.check,
