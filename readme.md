@@ -11,7 +11,7 @@
 
 [![paypal](https://img.shields.io/badge/buy%20me%20a%20coffee-paypal-blue)](https://buymeacoffee.aspiesoft.com/)
 
-If you have Aspergers Syndrome (ASD), like I do, and you like even numbers, this module can help.
+If you have Asperger's Syndrome (ASD), like I do, and you like even numbers, this module can help.
 
 This module takes an odd number and sets it to what an aspie would consider even.
 Multiples of 5 are also considered even by this module.
@@ -19,13 +19,13 @@ Multiples of 5 are also considered even by this module.
 ### Installation
 
 ```shell script
-npm install aspie-even-numbers
+npm install @aspiesoft/aspie-even-numbers
 ```
 
 ### Setup
 
 ```js
-const aspieEven = require('aspie-even-numbers');
+const aspieEven = require('@aspiesoft/aspie-even-numbers');
 ```
 
 ### Usage
