@@ -7,7 +7,6 @@
 
 ![npm](https://img.shields.io/npm/dw/aspie-even-numbers)
 ![npm](https://img.shields.io/npm/dm/aspie-even-numbers)
-![GitHub last commit](https://img.shields.io/github/last-commit/aspiesoft/aspie-even-numbers)
 
 [![paypal](https://img.shields.io/badge/buy%20me%20a%20coffee-paypal-blue)](https://buymeacoffee.aspiesoft.com/)
 
