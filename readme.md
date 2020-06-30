@@ -8,7 +8,7 @@
 ![npm](https://img.shields.io/npm/dw/aspie-even-numbers)
 ![npm](https://img.shields.io/npm/dm/aspie-even-numbers)
 
-[![paypal](https://img.shields.io/badge/buy%20me%20a%20coffee-paypal-blue)](https://buymeacoffee.aspiesoft.com/)
+[![paypal](https://img.shields.io/badge/buy%20me%20a%20coffee-paypal-blue)](https://buymeacoffee.aspiesoft.com/from-npm/aspie-even-numbers)
 
 If you have Asperger's Syndrome (ASD), like I do, and you like even numbers, this module can help.
 
