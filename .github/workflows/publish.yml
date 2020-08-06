@@ -25,57 +25,12 @@ jobs:
       - name: Check Version
         id: check
         uses: EndBug/version-check@v1
+        with:
+          diff-search: true
+          file-name: ./package.json
       - name: If Version Changed
         if: steps.check.outputs.changed == 'true'
         run: 'echo "version change"'
       - name: If Not Version Changed
         if: steps.check.outputs.changed != 'true'
         run: 'echo "No version change"'
-
-  publish-npm:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-          scope: aspiesoft
-        if: steps.check.outputs.changed == 'true'
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
-  publish-gpr:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-          scope: aspiesoft
-      - run: npm publish
-        env:
-          AUTHOR_EMAIL: aspiesoftweb@gmail.com
-          AUTHOR_NAME: aspiesoft
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-  publish-npm-noscope:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - name: remove scope from package name
-        run: |
-          sed -i 's/"name":\s"@aspiesoft\//"name":"/g' package.json
-          sed -i 's/"name":\s"@aspiesoft\//"name":"/g' package-lock.json
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
