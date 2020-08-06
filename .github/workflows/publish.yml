@@ -18,25 +18,31 @@ jobs:
       - run: npm ci
       - run: node test/index.js
 
+  check-version:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - id: check
+        uses: EndBug/version-check@v1
+        with:
+          node-version: 12
+        if: steps.check.outputs.changed != 'true'
+        run: 'echo "No version change"'
+
   publish-npm:
     needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - id: check
-        uses: EndBug/version-check@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
           scope: aspiesoft
-      - name: if version changed
         if: steps.check.outputs.changed == 'true'
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - name: fi version not changed
-        run: 'echo "No version change"'
 
   publish-gpr:
     needs: test
