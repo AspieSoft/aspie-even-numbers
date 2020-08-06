@@ -25,8 +25,9 @@ jobs:
       - name: Check Version
         id: check
         uses: EndBug/version-check@v1
-        with:
-          node-version: 12
+      - name: If Version Changed
+        if: steps.check.outputs.changed == 'true'
+        run: 'echo "version change"'
       - name: If Not Version Changed
         if: steps.check.outputs.changed != 'true'
         run: 'echo "No version change"'
