@@ -17,6 +17,6 @@
     "numbers"
   ],
   "devDependencies": {
-    "miniforge-js": "^0.2.5"
+    "@aspiesoft/miniforge-js": "^0.2.6"
   }
 }
