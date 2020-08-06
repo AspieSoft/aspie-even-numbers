@@ -1,3 +1,5 @@
 .github/
 test/
 main.js
+app.js
+build.js
