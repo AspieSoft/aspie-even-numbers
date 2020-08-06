@@ -104,5 +104,4 @@ function isNumberType(number, allowedNumbers){
 	}return true;
 }
 
-
 module.exports = {check: checkEven, set: setEven, isEven, is5Multiple};
