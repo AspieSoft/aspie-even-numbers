@@ -93,6 +93,6 @@ aspieEven.set(8, 5); // output: 10
 '$'+aspieEven.set(0.73, {round: 2, min: 1, include: 1, includeBefore: 0}); // output: $1
 '$'+aspieEven.set(0, {round: 2, min: 1, include: 1, includeBefore: 0}); // output: $0
 
-console.log(aspieEven.set(3.141592, {round: 2, min: 1, include: [1, 3.14], includeBefore: 0})); // output: 3.14
+aspieEven.set(3.141592, {round: 2, min: 1, include: [1, 3.14], includeBefore: 0}); // output: 3.14
 
 ```
