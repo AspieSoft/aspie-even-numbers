@@ -1,3 +1,5 @@
+// In God We Trust
+
 function checkEven(number, options = {multiple, round, min, max, include, includeBefore, includeAfter, evenDecimalSize, includeNumber, includeDecimal} = {}){
 	number = Number(number);
 	return number === setEvenNumber(number, options);

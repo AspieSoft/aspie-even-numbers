@@ -1,4 +1,4 @@
-## Aspie Even Numbers
+# Aspie Even Numbers
 
 ![npm](https://img.shields.io/npm/v/aspie-even-numbers)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/aspie-even-numbers)
@@ -15,19 +15,19 @@ If you have Asperger's Syndrome (ASD), like I do, and you like even numbers, thi
 This module takes an odd number and sets it to what an aspie would consider even.
 Multiples of 5 are also considered even by this module, but you don't have to use that feature.
 
-### Installation
+## Installation
 
 ```shell script
 npm install @aspiesoft/aspie-even-numbers
 ```
 
-### Setup
+## Setup
 
 ```js
 const aspieEven = require('@aspiesoft/aspie-even-numbers');
 ```
 
-### Usage
+## Usage
 
 ```js
 // check if a number will be changed by .set()
