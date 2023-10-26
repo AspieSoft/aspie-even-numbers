@@ -1,6 +1,6 @@
 {
   "name": "@aspiesoft/aspie-even-numbers",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Set any number to what an aspie considers even. (includes multiples of 5)",
   "license": "MIT",
   "author": "AspieSoft",
@@ -21,6 +21,6 @@
     "numbers"
   ],
   "devDependencies": {
-    "@aspiesoft/miniforge-js": "^1.0.0"
+    "@aspiesoft/miniforge-js": "^1.2.2"
   }
 }
